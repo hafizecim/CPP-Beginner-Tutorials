@@ -1,0 +1,73 @@
+# Project: 004_C++_Dersler_30.06.2025
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o 01_For_Dongusu_1.o 02_For_Dongusu_2.o 03_For_Dongusu_3.o 04_For_Dongusu_4.o 05_For_Dongusu_5.o 06_For_Dongusu_6.o 07_For_Dongusu_7.o 08_For_Dongusu_8.o 09_For_Dongusu_Fibo.o 10_For_Dongusu_Break.o Tanimsiz_Davranisli_For_Dongusu.o 11_For_Dongusu_Continue.o 12_For_Dongusu_9.o 13_For_Dongusu_Kucuk_Buyuk.o 14_For_Dongusu_Faktoryel.o
+LINKOBJ  = main.o 01_For_Dongusu_1.o 02_For_Dongusu_2.o 03_For_Dongusu_3.o 04_For_Dongusu_4.o 05_For_Dongusu_5.o 06_For_Dongusu_6.o 07_For_Dongusu_7.o 08_For_Dongusu_8.o 09_For_Dongusu_Fibo.o 10_For_Dongusu_Break.o Tanimsiz_Davranisli_For_Dongusu.o 11_For_Dongusu_Continue.o 12_For_Dongusu_9.o 13_For_Dongusu_Kucuk_Buyuk.o 14_For_Dongusu_Faktoryel.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = 004_C++_Dersler_30.06.2025.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+01_For_Dongusu_1.o: 01_For_Dongusu_1.cpp
+	$(CPP) -c 01_For_Dongusu_1.cpp -o 01_For_Dongusu_1.o $(CXXFLAGS)
+
+02_For_Dongusu_2.o: 02_For_Dongusu_2.cpp
+	$(CPP) -c 02_For_Dongusu_2.cpp -o 02_For_Dongusu_2.o $(CXXFLAGS)
+
+03_For_Dongusu_3.o: 03_For_Dongusu_3.cpp
+	$(CPP) -c 03_For_Dongusu_3.cpp -o 03_For_Dongusu_3.o $(CXXFLAGS)
+
+04_For_Dongusu_4.o: 04_For_Dongusu_4.cpp
+	$(CPP) -c 04_For_Dongusu_4.cpp -o 04_For_Dongusu_4.o $(CXXFLAGS)
+
+05_For_Dongusu_5.o: 05_For_Dongusu_5.cpp
+	$(CPP) -c 05_For_Dongusu_5.cpp -o 05_For_Dongusu_5.o $(CXXFLAGS)
+
+06_For_Dongusu_6.o: 06_For_Dongusu_6.cpp
+	$(CPP) -c 06_For_Dongusu_6.cpp -o 06_For_Dongusu_6.o $(CXXFLAGS)
+
+07_For_Dongusu_7.o: 07_For_Dongusu_7.cpp
+	$(CPP) -c 07_For_Dongusu_7.cpp -o 07_For_Dongusu_7.o $(CXXFLAGS)
+
+08_For_Dongusu_8.o: 08_For_Dongusu_8.cpp
+	$(CPP) -c 08_For_Dongusu_8.cpp -o 08_For_Dongusu_8.o $(CXXFLAGS)
+
+09_For_Dongusu_Fibo.o: 09_For_Dongusu_Fibo.cpp
+	$(CPP) -c 09_For_Dongusu_Fibo.cpp -o 09_For_Dongusu_Fibo.o $(CXXFLAGS)
+
+10_For_Dongusu_Break.o: 10_For_Dongusu_Break.cpp
+	$(CPP) -c 10_For_Dongusu_Break.cpp -o 10_For_Dongusu_Break.o $(CXXFLAGS)
+
+Tanimsiz_Davranisli_For_Dongusu.o: Tanimsiz_Davranisli_For_Dongusu.cpp
+	$(CPP) -c Tanimsiz_Davranisli_For_Dongusu.cpp -o Tanimsiz_Davranisli_For_Dongusu.o $(CXXFLAGS)
+
+11_For_Dongusu_Continue.o: 11_For_Dongusu_Continue.cpp
+	$(CPP) -c 11_For_Dongusu_Continue.cpp -o 11_For_Dongusu_Continue.o $(CXXFLAGS)
+
+12_For_Dongusu_9.o: 12_For_Dongusu_9.cpp
+	$(CPP) -c 12_For_Dongusu_9.cpp -o 12_For_Dongusu_9.o $(CXXFLAGS)
+
+13_For_Dongusu_Kucuk_Buyuk.o: 13_For_Dongusu_Kucuk_Buyuk.cpp
+	$(CPP) -c 13_For_Dongusu_Kucuk_Buyuk.cpp -o 13_For_Dongusu_Kucuk_Buyuk.o $(CXXFLAGS)
+
+14_For_Dongusu_Faktoryel.o: 14_For_Dongusu_Faktoryel.cpp
+	$(CPP) -c 14_For_Dongusu_Faktoryel.cpp -o 14_For_Dongusu_Faktoryel.o $(CXXFLAGS)

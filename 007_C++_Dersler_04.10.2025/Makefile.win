@@ -1,0 +1,58 @@
+# Project: 007_C++_Dersler_11.07.2025
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o 01_Cok_Boyutlu_Diziler_Ornek1.o 02_Cok_Boyutlu_Diziler_Ornek2.o 03_Cok_Boyutlu_Diziler_Ornek3.o 04_Cok_Boyutlu_Diziler_Ornek4.o 05_Cok_Boyutlu_Diziler_Ornek5.o 06_Cok_Boyutlu_Diziler_Ornek6.o 07_Cok_Boyutlu_Diziler_Ornek7.o 08_Cok_Boyutlu_Diziler_Tranpoz_Ornek8.o 09_Metotlar_Basamak_Sayisi_Ornek.o 10_Metodlar_Kelime_Ve_Tersi.o
+LINKOBJ  = main.o 01_Cok_Boyutlu_Diziler_Ornek1.o 02_Cok_Boyutlu_Diziler_Ornek2.o 03_Cok_Boyutlu_Diziler_Ornek3.o 04_Cok_Boyutlu_Diziler_Ornek4.o 05_Cok_Boyutlu_Diziler_Ornek5.o 06_Cok_Boyutlu_Diziler_Ornek6.o 07_Cok_Boyutlu_Diziler_Ornek7.o 08_Cok_Boyutlu_Diziler_Tranpoz_Ornek8.o 09_Metotlar_Basamak_Sayisi_Ornek.o 10_Metodlar_Kelime_Ve_Tersi.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = 007_C++_Dersler_11.07.2025.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+01_Cok_Boyutlu_Diziler_Ornek1.o: 01_Cok_Boyutlu_Diziler_Ornek1.cpp
+	$(CPP) -c 01_Cok_Boyutlu_Diziler_Ornek1.cpp -o 01_Cok_Boyutlu_Diziler_Ornek1.o $(CXXFLAGS)
+
+02_Cok_Boyutlu_Diziler_Ornek2.o: 02_Cok_Boyutlu_Diziler_Ornek2.cpp
+	$(CPP) -c 02_Cok_Boyutlu_Diziler_Ornek2.cpp -o 02_Cok_Boyutlu_Diziler_Ornek2.o $(CXXFLAGS)
+
+03_Cok_Boyutlu_Diziler_Ornek3.o: 03_Cok_Boyutlu_Diziler_Ornek3.cpp
+	$(CPP) -c 03_Cok_Boyutlu_Diziler_Ornek3.cpp -o 03_Cok_Boyutlu_Diziler_Ornek3.o $(CXXFLAGS)
+
+04_Cok_Boyutlu_Diziler_Ornek4.o: 04_Cok_Boyutlu_Diziler_Ornek4.cpp
+	$(CPP) -c 04_Cok_Boyutlu_Diziler_Ornek4.cpp -o 04_Cok_Boyutlu_Diziler_Ornek4.o $(CXXFLAGS)
+
+05_Cok_Boyutlu_Diziler_Ornek5.o: 05_Cok_Boyutlu_Diziler_Ornek5.cpp
+	$(CPP) -c 05_Cok_Boyutlu_Diziler_Ornek5.cpp -o 05_Cok_Boyutlu_Diziler_Ornek5.o $(CXXFLAGS)
+
+06_Cok_Boyutlu_Diziler_Ornek6.o: 06_Cok_Boyutlu_Diziler_Ornek6.cpp
+	$(CPP) -c 06_Cok_Boyutlu_Diziler_Ornek6.cpp -o 06_Cok_Boyutlu_Diziler_Ornek6.o $(CXXFLAGS)
+
+07_Cok_Boyutlu_Diziler_Ornek7.o: 07_Cok_Boyutlu_Diziler_Ornek7.cpp
+	$(CPP) -c 07_Cok_Boyutlu_Diziler_Ornek7.cpp -o 07_Cok_Boyutlu_Diziler_Ornek7.o $(CXXFLAGS)
+
+08_Cok_Boyutlu_Diziler_Tranpoz_Ornek8.o: 08_Cok_Boyutlu_Diziler_Tranpoz_Ornek8.cpp
+	$(CPP) -c 08_Cok_Boyutlu_Diziler_Tranpoz_Ornek8.cpp -o 08_Cok_Boyutlu_Diziler_Tranpoz_Ornek8.o $(CXXFLAGS)
+
+09_Metotlar_Basamak_Sayisi_Ornek.o: 09_Metotlar_Basamak_Sayisi_Ornek.cpp
+	$(CPP) -c 09_Metotlar_Basamak_Sayisi_Ornek.cpp -o 09_Metotlar_Basamak_Sayisi_Ornek.o $(CXXFLAGS)
+
+10_Metodlar_Kelime_Ve_Tersi.o: 10_Metodlar_Kelime_Ve_Tersi.cpp
+	$(CPP) -c 10_Metodlar_Kelime_Ve_Tersi.cpp -o 10_Metodlar_Kelime_Ve_Tersi.o $(CXXFLAGS)
